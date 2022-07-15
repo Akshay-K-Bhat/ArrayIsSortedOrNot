@@ -6,11 +6,11 @@ public class Recursion {
                return true;
            }
 
-           if (arr[idx] < arr[idx + 1]) {
-               return isSorted(arr, idx + 1);
-           } else {
+           if (arr[idx] >= arr[idx + 1]) {
                return false;
            }
+               return isSorted(arr,idx+1);
+
        }
 
 
